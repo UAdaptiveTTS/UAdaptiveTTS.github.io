@@ -54,8 +54,13 @@
   <time datetime=2020-10-16T11:35:23&#43;0800 class="post-date">Fri, Oct 16, 2020</time>
   <h2 id="author">Author</h2>
 <ul>
-<li>Yuzi Yan (Tsinghua University) <a href="mailto:yan-yz17@mails.tsinghua.edu.cn">yan-yz17@mails.tsinghua.edu.cn</a></li>
-<li>Xu Tan</li>
+<li>Yuzi Yan (EE, Tsinghua University) <a href="mailto:yan-yz17@mails.tsinghua.edu.cn">yan-yz17@mails.tsinghua.edu.cn</a></li>
+<li>Xu Tan (Microsoft Research Asia) <a href="mailto:xuta@microsoft.com">xuta@microsoft.com</a></li>
+<li>Bohan Li (Microsoft Azure Speech) <a href="mailto:bohan.li@microsoft.com">bohan.li@microsoft.com</a></li>
+<li>Tao Qin (Microsoft Research Asia) <a href="mailto:taoqin@microsoft.com">taoqin@microsoft.com</a></li>
+<li>Sheng Zhao (Microsoft Azure Speech) <a href="mailto:sheng.zhao@microsoft.com">sheng.zhao@microsoft.com</a></li>
+<li>Yuan Shen (EE, Tsinghua University) <a href="mailto:shenyuan_ee@tsinghua.edu.cn">shenyuan_ee@tsinghua.edu.cn</a></li>
+<li>Tie-yan Liu (Microsoft Research Asia) <a href="mailto:tie-yan.liu@microsoft.com">tie-yan.liu@microsoft.com</a></li>
 </ul>
 <h2 id="abstract">Abstract</h2>
 <p>Text to speech (TTS) is widely used to synthesize personal voice for a target speaker, where a well-trained source TTS model is usually fine-tuned with few paired adaptation data (speech and its transcript) on this target speaker. However, in many scenarios, only the untranscribed speech data is available for adaptation, which brings challenges to the previous TTS adaptation pipeline. In this paper, we develop an adaptive TTS system that only leverages untranscribed speech data for adaptation.  Specifically, we introduce a speech encoder to a well-trained TTS model to conduct speech reconstruction, and at the same time constrain the output sequence of the speech encoder to be close to that of the original phoneme encoder. In adaptation, we use untranscribed speech data for speech reconstruction and only fine-tune the TTS decoder.  Our system has two advantages: 1) Pluggable: our system can be easily applied to existing trained TTS models without retraining. 2) Effective: our system achieves on-par voice quality  compared with the transcribed TTS adaptation, with slightly more untranscribed data, and achieves better voice quality than previous adaptation methods.</p>
