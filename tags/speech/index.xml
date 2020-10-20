@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Speech on My New Hugo Site</title>
+    <link>http://UAdaptiveTTS.github.io/tags/speech/</link>
+    <description>Recent content in Speech on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 16 Oct 2020 11:35:23 +0800</lastBuildDate><atom:link href="http://UAdaptiveTTS.github.io/tags/speech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Adaptive Text to Speech with Untranscribed Data</title>
+      <link>http://UAdaptiveTTS.github.io/adaptive/</link>
+      <pubDate>Fri, 16 Oct 2020 11:35:23 +0800</pubDate>
+      
+      <guid>http://UAdaptiveTTS.github.io/adaptive/</guid>
+      <description>Author  Yuzi Yan (Tsinghua University) yan-yz17@mails.tsinghua.edu.cn Xu Tan  Abstract Text to speech (TTS) is widely used to synthesize personal voice for a target speaker, where a well-trained source TTS model is usually fine-tuned with few paired adaptation data (speech and its transcript) on this target speaker. However, in many scenarios, only the untranscribed speech data is available for adaptation, which brings challenges to the previous TTS adaptation pipeline. In this paper, we develop an adaptive TTS system that only leverages untranscribed speech data for adaptation.</description>
+    </item>
+    
+  </channel>
+</rss>

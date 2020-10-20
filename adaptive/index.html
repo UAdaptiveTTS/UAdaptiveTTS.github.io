@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.76.5" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Adaptive Text to Speech with Untranscribed Data &middot; My New Hugo Site</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="http://UAdaptiveTTS.github.io/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="http://UAdaptiveTTS.github.io/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="http://UAdaptiveTTS.github.io/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="http://UAdaptiveTTS.github.io/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="http://UAdaptiveTTS.github.io/"><h1>My New Hugo Site</h1></a>
+      <p class="lead">
+      An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="http://UAdaptiveTTS.github.io/">Home</a> </li>
+        
+      </ul>
+    </nav>
+
+    <p>&copy; 2020. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Adaptive Text to Speech with Untranscribed Data</h1>
+  <time datetime=2020-10-16T11:35:23&#43;0800 class="post-date">Fri, Oct 16, 2020</time>
+  <h2 id="author">Author</h2>
+<ul>
+<li>Yuzi Yan (Tsinghua University) <a href="mailto:yan-yz17@mails.tsinghua.edu.cn">yan-yz17@mails.tsinghua.edu.cn</a></li>
+<li>Xu Tan</li>
+</ul>
+<h2 id="abstract">Abstract</h2>
+<p>Text to speech (TTS) is widely used to synthesize personal voice for a target speaker, where a well-trained source TTS model is usually fine-tuned with few paired adaptation data (speech and its transcript) on this target speaker. However, in many scenarios, only the untranscribed speech data is available for adaptation, which brings challenges to the previous TTS adaptation pipeline. In this paper, we develop an adaptive TTS system that only leverages untranscribed speech data for adaptation.  Specifically, we introduce a speech encoder to a well-trained TTS model to conduct speech reconstruction, and at the same time constrain the output sequence of the speech encoder to be close to that of the original phoneme encoder. In adaptation, we use untranscribed speech data for speech reconstruction and only fine-tune the TTS decoder.  Our system has two advantages: 1) Pluggable: our system can be easily applied to existing trained TTS models without retraining. 2) Effective: our system achieves on-par voice quality  compared with the transcribed TTS adaptation, with slightly more untranscribed data, and achieves better voice quality than previous adaptation methods.</p>
+<h2 id="audio-samples">Audio Samples</h2>
+<p>All of the audio samples use MelGAN as vocoder.</p>
+<h3 id="audio-quality">Audio Quality</h3>
+<p><em>When a man looks for something beyond his reach, his friends say he is looking for the pot of gold at the end of the rainbow.</em></p>
+<h4 id="vctk-228-female">VCTK 228 Female</h4>
+<table><thead>
+<tr>
+<th style="text-align: center">GT(MelGAN)</th>
+<th style="text-align: center">AdaSpeech</th>
+<th style="text-align: center">Our Untranscribed Adaptive TTS</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/Adaptive/228F/gt/GeneralSentence/00002.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/Adaptive/228F/fs2/GeneralSentence/00002.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/Adaptive/228F/untrans/GeneralSentence/00002.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+</tr>
+</tbody></table>
+<table><thead>
+<tr>
+<th style="text-align: center">Jointed Training</th>
+<th style="text-align: center">PPG-based</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/Adaptive/228F/nautilus/GeneralSentence/00002.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/Adaptive/228F/ppgs/GeneralSentence/00002.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+</tr>
+</tbody></table>
+<h4 id="vctk-245-male">VCTK 245 Male</h4>
+<table><thead>
+<tr>
+<th style="text-align: center">GT(MelGAN)</th>
+<th style="text-align: center">AdaSpeech</th>
+<th style="text-align: center">Our Untranscribed Adaptive TTS</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/Adaptive/245M/gt/GeneralSentence/00002.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/Adaptive/245M/fs2/GeneralSentence/00002.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/Adaptive/245M/untrans/GeneralSentence/00002.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+</tr>
+</tbody></table>
+<table><thead>
+<tr>
+<th style="text-align: center">Jointed Training</th>
+<th style="text-align: center">PPG-based</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/Adaptive/245M/nautilus/GeneralSentence/00002.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/Adaptive/245M/ppgs/GeneralSentence/00002.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+</tr>
+</tbody></table>
+<h3 id="varying-adaptation-data">Varying Adaptation Data</h3>
+<p><em>When a man looks for something beyond his reach, his friends say he is looking for the pot of gold at the end of the rainbow.</em></p>
+
+</div>
+
+
+    </main>
+
+    
+      
+    
+  </body>
+</html>
