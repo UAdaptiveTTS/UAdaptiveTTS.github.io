@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Adaptive Text to Speech with Untranscribed Data &middot; </title>
+  <title>Adaptive Text to Speech for Spontaneous Conversational Speech &middot; </title>
   <meta name="description" content="" />
 
   
@@ -49,7 +49,7 @@
 
     <main class="content container">
     <div class="post">
-  <h1>Adaptive Text to Speech with Untranscribed Data</h1>
+  <h1>Adaptive Text to Speech for Spontaneous Conversational Speech</h1>
   <time datetime=2020-10-16T11:35:23&#43;0800 class="post-date">Fri, Oct 16, 2020</time>
   <h2 id="author">Author</h2>
 <ul>
@@ -62,7 +62,7 @@
 <li>Tie-Yan Liu (Microsoft Research Asia) <a href="mailto:tie-yan.liu@microsoft.com">tie-yan.liu@microsoft.com</a></li>
 </ul>
 <h2 id="abstract">Abstract</h2>
-<p>Text to speech (TTS) is widely used to synthesize personal voice for a target speaker, where a well-trained source TTS model is usually fine-tuned with few paired adaptation data (speech and its transcript) on this target speaker. However, in many scenarios, only the untranscribed speech data is available for adaptation, which brings challenges to the previous TTS adaptation pipeline. In this paper, we develop an adaptive TTS system that only leverages untranscribed speech data for adaptation.  Specifically, we introduce a speech encoder to a well-trained TTS model to conduct speech reconstruction, and at the same time constrain the output sequence of the speech encoder to be close to that of the original phoneme encoder. In adaptation, we use untranscribed speech data for speech reconstruction and only fine-tune the TTS decoder.  Our system has two advantages: 1) Pluggable: our system can be easily applied to existing trained TTS models without retraining. 2) Effective: our system achieves on-par voice quality  compared with the transcribed TTS adaptation, with slightly more untranscribed data, and achieves better voice quality than previous adaptation methods.</p>
+<p>Text to speech (TTS) is widely used to synthesize speech. However, it is still a huge challenge to synthesize spontaneous speech like podcast or talk show for two main reasons: 1) lack of training data. Most mainstream datasets for TTS training are reading-style. 2) difficulty in modeling speaking style. Unlike reading-style speech, spontaneous speech has many natural filled pauses (um and uh). Besides, rhythm of it is more variable. In this paper, we propose a new method to address these problems by 1) constructing a spontaneous speech dataset, 2) analyzing the important factors in spontaneous speech like filled pauses (FPs) and rhythm, and 3) developing a spontaneous TTS pipeline through an adaptation way. Specifically, we introduce an FP predictor trained on spontaneous data to a TTS source model trained on reading-style data, which is managed to insert FPs appropriately. To obtain accurate control of the varying duration, we introduce MoE (Mixture of Experts) on duration predictor, which contains three seperate duration predictors that are responsible for the generation of fast, medium and slow speech respectively. We fine-tune it as well as a pitch predictor to achieve fine-grained duration and pitch control using spontaneous data. Besides, our model can also transfer the spontaneity to other speaker through speaker adaptation. Compared with previous TTS model, the proposed method achieves 0.30 better SMOS focusing on style similarity with spontaneous speech, and it achieves better results in MOS tests focusing on many different aspects.</p>
 <h2 id="audio-samples">Audio Samples</h2>
 <p>All of the audio samples use MelGAN as vocoder.</p>
 <h3 id="audio-quality">Audio Quality</h3>

@@ -8,6 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 16 Oct 2020 11:35:23 +0800</lastBuildDate><atom:link href="http://uadaptivetts.github.io/tags/speech/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Adaptive Text to Speech for Spontaneous Conversational Speech</title>
+      <link>http://uadaptivetts.github.io/spontts/</link>
+      <pubDate>Fri, 16 Oct 2020 11:35:23 +0800</pubDate>
+      
+      <guid>http://uadaptivetts.github.io/spontts/</guid>
+      <description>Author  Yuzi Yan (EE, Tsinghua University) yan-yz17@mails.tsinghua.edu.cn Xu Tan (Microsoft Research Asia) xuta@microsoft.com Bohan Li (Microsoft Azure Speech) bohan.li@microsoft.com Tao Qin (Microsoft Research Asia) taoqin@microsoft.com Sheng Zhao (Microsoft Azure Speech) sheng.zhao@microsoft.com Yuan Shen (EE, Tsinghua University) shenyuan_ee@tsinghua.edu.cn Tie-Yan Liu (Microsoft Research Asia) tie-yan.liu@microsoft.com  Abstract Text to speech (TTS) is widely used to synthesize speech. However, it is still a huge challenge to synthesize spontaneous speech like podcast or talk show for two main reasons: 1) lack of training data.</description>
+    </item>
+    
+    <item>
       <title>Adaptive Text to Speech with Untranscribed Data</title>
       <link>http://uadaptivetts.github.io/adaptive/</link>
       <pubDate>Fri, 16 Oct 2020 11:35:23 +0800</pubDate>
