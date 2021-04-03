@@ -1,34 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>http://uadaptivetts.github.io/</loc>
     <lastmod>2020-10-16T11:35:23+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://uadaptivetts.github.io/spontts/</loc>
     <lastmod>2020-10-16T11:35:23+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://uadaptivetts.github.io/adaptive/</loc>
     <lastmod>2020-10-16T11:35:23+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://uadaptivetts.github.io/tags/speech/</loc>
     <lastmod>2020-10-16T11:35:23+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://uadaptivetts.github.io/tags/</loc>
     <lastmod>2020-10-16T11:35:23+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://uadaptivetts.github.io/categories/</loc>
   </url>
-  
 </urlset>
