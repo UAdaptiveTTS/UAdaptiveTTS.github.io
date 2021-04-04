@@ -22,7 +22,7 @@
       <pubDate>Fri, 16 Oct 2020 11:35:23 +0800</pubDate>
       
       <guid>http://uadaptivetts.github.io/sponspeech/</guid>
-      <description>Author  Yuzi Yan (EE, Tsinghua University) yan-yz17@mails.tsinghua.edu.cn Xu Tan (Microsoft Research Asia) xuta@microsoft.com Bohan Li (Microsoft Azure Speech) bohan.li@microsoft.com Guangyan Zhang (EE, The Chinese University of Hong Kong) gyzhang@link.cuhk.edu.hk Tao Qin (Microsoft Research Asia) taoqin@microsoft.com Sheng Zhao (Microsoft Azure Speech) sheng.zhao@microsoft.com Yuan Shen (EE, Tsinghua University) shenyuan_ee@tsinghua.edu.cn Wei-Qiang Zhang (EE, Tsinghua University) wqzhang@tsinghua.edu.cn Tie-Yan Liu (Microsoft Research Asia) tie-yan.liu@microsoft.com  Abstract Text to speech (TTS) is widely used to synthesize speech.</description>
+      <description>Author  Yuzi Yan (EE, Tsinghua University) yan-yz17@mails.tsinghua.edu.cn Xu Tan (Microsoft Research Asia) xuta@microsoft.com Bohan Li (Microsoft Azure Speech) bohan.li@microsoft.com Guangyan Zhang (EE, The Chinese University of Hong Kong) gyzhang@link.cuhk.edu.hk Tao Qin (Microsoft Research Asia) taoqin@microsoft.com Sheng Zhao (Microsoft Azure Speech) sheng.zhao@microsoft.com Yuan Shen (EE, Tsinghua University) shenyuan_ee@tsinghua.edu.cn Wei-Qiang Zhang (EE, Tsinghua University) wqzhang@tsinghua.edu.cn Tie-Yan Liu (Microsoft Research Asia) tie-yan.liu@microsoft.com  Audio Samples All of the audio samples use MelGAN as vocoder.</description>
     </item>
     
   </channel>
